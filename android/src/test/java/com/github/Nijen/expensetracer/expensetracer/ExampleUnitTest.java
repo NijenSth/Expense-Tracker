@@ -1,4 +1,4 @@
-package com.github.ematiyuk.expensetracer;
+package com.github.Nijen.expensetracer.expensetracer;
 
 import org.junit.Test;
 
