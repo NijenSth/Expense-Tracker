@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <!-- The ActionBar (Toolbar) displayed at the top -->
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar" />
+
+    <!-- The main content view where fragments are loaded -->
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation"
+        android:layout_below="@id/toolbar" />
+
+    <LinearLayout
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <ImageButton
+            android:id="@+id/today_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_rect_20"
+            android:padding="16dp"
+            android:src="@drawable/ic_nav_today"
+            android:tint="#ffffff" />
+
+        <ImageButton
+            android:id="@+id/report_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_rect_20"
+            android:padding="16dp"
+            android:src="@drawable/ic_nav_report"
+            android:tint="#ffffff" />
+
+        <ImageButton
+            android:id="@+id/category_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_rect_20"
+            android:padding="16dp"
+            android:src="@drawable/ic_nav_categories"
+            android:tint="#ffffff" />
+
+        <ImageButton
+            android:id="@+id/setting_button"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:backgroundTint="@android:color/transparent"
+            android:padding="16dp"
+            android:src="@drawable/ic_nav_settings"
+            android:tint="#ffffff" />
+
+    </LinearLayout>
+
+</RelativeLayout>
